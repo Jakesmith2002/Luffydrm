@@ -61,7 +61,7 @@ async def drm(bot: ace, m: Message):
         os.remove(f"{path}/video.mp4")
         os.remove(f"{path}/audio.m4a")
         filename = f"{path}/{name}.mp4"
-        cc = f"{name}.mp4\n\n**Description:-**\n{CP}"
+        cc = f"{name}.mp4\n\n**Extracted By »**{CP}"
         # await DownUP.sendVideo(bot, m, filename, cc, Thumb, name, prog, path)
         UL = Upload_to_Tg(bot=bot, m=m, file_path=filename, name=name,
                             Thumb=Thumb, path=path, show_msg=prog, caption=cc)
