@@ -74,4 +74,4 @@ async def drm(bot: ace, m: Message):
         if os.path.exists(tPath):
             shutil.rmtree(tPath)
         shutil.rmtree(path)
-        await m.reply_text("Done")
+        await m.reply_text("Done✅")
