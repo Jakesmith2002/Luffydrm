@@ -17,6 +17,7 @@ cmake -DCMAKE_BUILD_TYPE=Release .. &&\
 make &&\ 
 make install
 RUN pip3 install -r requirements.txt
+EXPOSE 8080
 CMD bash start.sh
 
 #!git clone https://github.com/axiomatic-systems/Bento4.git && cd Bento4 && apt-get -y install cmake && mkdir cmakebuild && cd cmakebuild/ && cmake -DCMAKE_BUILD_TYPE=Release .. && make && make install
