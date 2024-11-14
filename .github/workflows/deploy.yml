@@ -9,10 +9,10 @@ jobs:
       - uses: actions/checkout@v3
       - uses: akhileshns/heroku-deploy@v3.12.14
         with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          heroku_api_key: HRKU-9dd1f38c-a9e1-428b-8973-3b3c81f28a58
+          heroku_app_name: luffynewtxt545
+          heroku_email: gohilkanubhai1980@gmail.com
           usedocker: true
-          docker_heroku_process_type: web
+          docker_heroku_process_type: worker
           stack: "container"
           region: "eu"
