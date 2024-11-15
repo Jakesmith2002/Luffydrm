@@ -13,6 +13,6 @@ jobs:
           heroku_app_name: luffynewtxt545
           heroku_email: gohilkanubhai1980@gmail.com
           usedocker: true
-          docker_heroku_process_type: worker
+          docker_heroku_process_type: web
           stack: "container"
           region: "eu"
