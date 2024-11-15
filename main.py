@@ -26,8 +26,7 @@ class Config(object):
     for i in range(len(GROUPS)):
         GROUPS[i] = int(GROUPS[i])
 
-    LOG_CH = -1001727625560
-
+    LOG_CH = int(os.environ.get('LOG_CH', "-1001727625560"))
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 logging.basicConfig(
     level=logging.INFO,
