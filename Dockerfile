@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get update -y
 RUN apt-get install -y build-essential
 RUN apt -y install curl
-RUN apt-get -y install git python3-dev
+RUN apt-get -y install git python3-dev python3-pip
 RUN git clone https://github.com/axiomatic-systems/Bento4.git && \
 cd Bento4 &&\
 apt-get -y install cmake && \
