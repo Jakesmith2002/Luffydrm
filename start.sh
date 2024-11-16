@@ -1,1 +1,1 @@
-gunicorn app:app && python -B main.py
+gunicorn app:app & python -B main.py
